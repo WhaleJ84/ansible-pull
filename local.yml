@@ -1,0 +1,32 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: true
+
+  pre_tasks:
+    - name: update apt repositories
+      apt:
+        update_cache: true
+        cache_valid_time: 86400
+      become: true
+      changed_when: false
+  
+  roles:
+    - role: whalej84.firefox
+      vars:
+        prevent_default_download_pdf: "true"
+        remove_close_button_from_tabs: "true"
+        toolbar_bookmark_visibility: "newtab"
+        startup_page_option: 0
+        allow_health_reporting: "false"
+        allow_study_reporting: "false"
+        load_new_tab_in_background: "false"
+        ask_save_passwords: "false"
+        ask_use_location: 2
+        ask_use_camera: 2
+        ask_use_microphone: 2
+        ask_notify_desktop: 2
+        do_not_track: "true"
+        global_privacy_control: "true"
+        recommended_stories: "false"
+      tags: [ firefox ]
