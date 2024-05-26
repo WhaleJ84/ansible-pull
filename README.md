@@ -16,6 +16,12 @@ If 'local.yml' has been downloaded locally, it can be ran via `ansible-playbook 
 To run specific roles in the playbook, you can filter them using tags.
 For example, `--tags firefox --skip-tags install` will only configure Firefox (not install) and not run any other roles.
 
+## Related Repositories
+
+Personal Ansible role repositories used within this project will be linked here:
+
+- [ansible-role-firefox](https://github.com/WhaleJ84/ansible-role-firefox)
+
 ## Development Notes
 
 Any development notes relevant to this repository or any related ansible role repository will be kept here.
