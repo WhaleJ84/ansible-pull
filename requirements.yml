@@ -1,0 +1,5 @@
+---
+roles:
+  - name: whalej84.firefox
+    src: https://github.com/WhaleJ84/ansible-role-firefox.git
+    scm: git
