@@ -41,4 +41,5 @@
       vars:
         theme: "light"
         compact_mode: "true"
+        automatically_launch_keepassxc_at_system_startup: "true"
       tags: [ keepassxc ]
