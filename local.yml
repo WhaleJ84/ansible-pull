@@ -40,4 +40,5 @@
     - role: whalej84.keepassxc
       vars:
         theme: "light"
+        compact_mode: "true"
       tags: [ keepassxc ]
