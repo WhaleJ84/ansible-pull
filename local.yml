@@ -36,3 +36,8 @@
           - id: keepassxc-browser@keepassxc.org
             url: https://addons.mozilla.org/firefox/downloads/file/4285762/keepassxc_browser-latest.xpi
       tags: [ firefox ]
+      
+    - role: whalej84.keepassxc
+      vars:
+        theme: "light"
+      tags: [ keepassxc ]
