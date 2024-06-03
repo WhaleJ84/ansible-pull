@@ -42,4 +42,5 @@
         theme: "light"
         compact_mode: "true"
         automatically_launch_keepassxc_at_system_startup: "true"
+        enable_browser_integration: "true"
       tags: [ keepassxc ]
