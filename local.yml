@@ -42,6 +42,7 @@
         theme: "light"
         compact_mode: "true"
         automatically_launch_keepassxc_at_system_startup: "true"
-        enable_browser_integration: "true"
         minimize_instead_of_app_exit: "true"
+        show_a_system_tray_icon: "true"
+        enable_browser_integration: "true"
       tags: [ keepassxc ]
