@@ -46,4 +46,5 @@
         show_a_system_tray_icon: "true"
         tray_icon_type: "colorful"
         enable_browser_integration: "true"
+        enable_ssh_agent_integration: "true"
       tags: [ keepassxc ]
