@@ -45,6 +45,7 @@
         minimize_instead_of_app_exit: "true"
         show_a_system_tray_icon: "true"
         tray_icon_type: "colorful"
+        hide_window_to_system_tray_when_minimized: "true"
         enable_browser_integration: "true"
         enable_ssh_agent_integration: "true"
       tags: [ keepassxc ]
