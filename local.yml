@@ -49,3 +49,8 @@
         enable_browser_integration: "true"
         enable_ssh_agent_integration: "true"
       tags: [ keepassxc ]
+
+    - role: whalej84.pyenv
+      vars:
+        pyenv_root: "{{ ansible_user_dir }}/.local/share/pyenv"
+      tags: [ pyenv ]
