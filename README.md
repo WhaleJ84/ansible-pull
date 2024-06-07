@@ -21,6 +21,7 @@ For example, `--tags firefox --skip-tags install` will only configure Firefox (n
 Personal Ansible role repositories used within this project will be linked here:
 
 - [ansible-role-firefox](https://github.com/WhaleJ84/ansible-role-firefox)
+- [ansible-role-keepassxc](https://github.com/WhaleJ84/ansible-role-keepassxc)
 
 ## Development Notes
 
