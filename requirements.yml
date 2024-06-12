@@ -12,6 +12,10 @@ roles:
     src: https://github.com/WhaleJ84/ansible-role-tmux.git
     scm: git
 
+  - name: whalej84.psutil
+    src: https://github.com/WhaleJ84/ansible-role-psutil.git
+    scm: git
+
   - name: whalej84.gnome-terminal
     src: https://github.com/WhaleJ84/ansible-role-gnome-terminal.git
     scm: git
