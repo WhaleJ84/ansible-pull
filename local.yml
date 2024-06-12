@@ -84,6 +84,7 @@
         palette: "[{{ black }}, {{ red }}, {{ green }}, {{ yellow }}, {{ blue }}, {{ magenta }}, {{ cyan }}, {{ white }}, {{ bright_black }}, {{ bright_red }}, {{ bright_green }}, {{ bright_yellow }}, {{ bright_blue }}, {{ bright_magenta }}, {{ bright_cyan }}, {{ bright_white }}]"
         use_theme_colors: "false"
         cursor_shape: "ibeam"
+        show_scrollbar: "never"
         theme_variant: "system"
         custom_command: "tmux"
       tags: [ gnome-terminal ]
