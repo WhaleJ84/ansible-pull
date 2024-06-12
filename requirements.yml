@@ -8,6 +8,10 @@ roles:
     src: https://github.com/WhaleJ84/ansible-role-keepassxc.git
     scm: git
 
+  - name: whalej84.tmux
+    src: https://github.com/WhaleJ84/ansible-role-tmux.git
+    scm: git
+
   - name: whalej84.gnome-terminal
     src: https://github.com/WhaleJ84/ansible-role-gnome-terminal.git
     scm: git
