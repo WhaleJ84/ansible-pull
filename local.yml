@@ -87,3 +87,6 @@
         theme_variant: "system"
         custom_command: "tmux"
       tags: [ gnome-terminal ]
+
+    - name: whalej84.syncthing
+      tags: [ syncthing ]
