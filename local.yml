@@ -50,6 +50,11 @@
         enable_ssh_agent_integration: "true"
       tags: [ keepassxc ]
 
+    - role: whalej84.tmux
+      vars:
+        tmux_config_dir: "{{ ansible_user_dir }}/.config/tmux"
+      tags: [ tmux ]
+
     - role: whalej84.gnome-terminal
       vars:
         audible_bell: "false"
@@ -80,4 +85,5 @@
         use_theme_colors: "false"
         cursor_shape: "ibeam"
         theme_variant: "system"
+        custom_command: "tmux"
       tags: [ gnome-terminal ]
