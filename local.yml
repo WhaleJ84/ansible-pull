@@ -39,7 +39,7 @@
       
     - role: whalej84.keepassxc
       vars:
-        theme: "light"
+        theme: "auto"
         compact_mode: "true"
         automatically_launch_keepassxc_at_system_startup: "true"
         minimize_instead_of_app_exit: "true"
