@@ -104,6 +104,8 @@
           templateDir: "{{ ansible_user_dir }}/.local/share/git/templates/default"
         gpg_vars:
           format: "ssh"
+        commit_vars:
+          gpgsign: "true"
         alias_vars:
           co: "checkout"
           br: "branch -av"
