@@ -95,4 +95,16 @@
     - name: whalej84.git
       vars:
         config_location: "{{ ansible_user_dir }}/.config/git/config"
+        user_vars:
+          email: "james@james-whale.com"
+          name: "James Whale"
+          signingkey: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOBpPvI5ze4AbkQtGG6r/9X5/imK2e27SjQF86PzQc3j james@james-whale.com"
+        init_vars:
+          defaultBranch: "main"
+          templateDir: "{{ ansible_user_dir }}/.local/share/git/templates/default"
+        gpg_vars:
+          format: "ssh"
+        alias_vars:
+          co: "checkout"
+          br: "branch -av"
       tags: [ git ]
