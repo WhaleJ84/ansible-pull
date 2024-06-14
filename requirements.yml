@@ -27,3 +27,7 @@ roles:
   - name: whalej84.syncthing
     src: https://github.com/WhaleJ84/ansible-role-syncthing.git
     scm: git
+
+  - name: whalej84.git
+    src: https://github.com/WhaleJ84/ansible-role-git.git
+    scm: git
