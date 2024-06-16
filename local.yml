@@ -90,6 +90,21 @@
       tags: [ gnome-terminal ]
 
     - name: whalej84.syncthing
+      vars:
+        devices:
+          - "YRAHAWR-A3XFXZC-SCMZ5BB-K5RN2Y5-47OFKLK-XJ54HJ5-QSV6NP4-JP47MQR"
+          - "FBYQERZ-M45W5HZ-R7OGQ6V-5M7MX4X-GHIQ2EM-IWITNLH-O3N4HSH-4YK55AF"
+        keepassxc:
+          id: "gscwy-nuhan"
+          label: "KeepassXC"
+          path: "{{ ansible_user_dir }}/.local/share/keepassxc"
+          type: "sendreceive"
+          rescanIntervalS: "0"
+          fsWatcherEnabled: "false"
+          fsWatcherDelayS: "10"
+          fsWatcherTimeoutS: "0"
+          ignorePerms: "false"
+          autoNormalize: "false"
       tags: [ syncthing ]
 
     - name: whalej84.git
@@ -102,11 +117,45 @@
         init_vars:
           defaultBranch: "main"
           templateDir: "{{ ansible_user_dir }}/.local/share/git/templates/default"
+        core_vars:
+          editor: "vim"
+          hooksPath: "{{ ansible_user_dir }}/.local/share/git/hooks"
         gpg_vars:
           format: "ssh"
+        gpg_ssh_vars:
+          allowedSignersFile: "{{ ansible_user_dir }}/.ssh/allowed_signers"
         commit_vars:
           gpgsign: "true"
+        push_vars:
+          autoSetupRemote: "true"
         alias_vars:
           co: "checkout"
           br: "branch -av"
+          rmbr: "branch -D"
+          ci: "commit"
+          st: "status"
+          amend: "!git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend"
+          compare: "log -n1 -p --format=fuller"
+          unstage: "reset HEAD --"
+          lg: "log --graph --show-signature"
+          squash: "merge --squash"
+          rw: "reset --hard"
+          prune: "remote prune origin"
+        color_vars:
+          ui: "true"
+        color_branch_vars:
+          current: "yellow reverse"
+          local: "yellow"
+          remote: "green"
+        color_diff_vars:
+          meta: "yellow bold"
+          frag: "magenta bold"
+          old: "red bold"
+          new: "green bold"
+        color_status_vars:
+          added: "yellow"
+          changed: "green"
+          untracked: "red"
+        url_github_vars:
+          insteadOf: "gh:"
       tags: [ git ]
