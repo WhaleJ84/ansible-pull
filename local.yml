@@ -159,3 +159,14 @@
         url_github_vars:
           insteadOf: "gh:"
       tags: [ git ]
+
+    - role: whalej84.gns3
+      vars:
+        iou_support: True
+        new_path: "{{ ansible_user_dir }}/.local/share/gns3"
+        images_path: "{{ new_path }}/images"
+        projects_path: "{{ new_path }}/projects"
+        appliances_path: "{{ new_path }}/appliances"
+        symbols_path: "{{ new_path }}/symbols"
+        configs_path: "{{ new_path }}/configs"
+      tags: [ gns3 ]
