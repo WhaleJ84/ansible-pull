@@ -35,3 +35,11 @@ roles:
   - name: whalej84.gns3
     src: https://github.com/WhaleJ84/ansible-role-gns3.git
     scm: git
+
+  - name: whalej84.signal
+    src: https://github.com/WhaleJ84/ansible-role-signal.git
+    scm: git
+
+collections:
+  - community.general
+
