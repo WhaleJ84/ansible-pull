@@ -170,3 +170,6 @@
         symbols_path: "{{ new_path }}/symbols"
         configs_path: "{{ new_path }}/configs"
       tags: [ gns3 ]
+
+    - role: whalej84.signal
+      tags: [ signal ]
