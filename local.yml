@@ -35,6 +35,8 @@
             url: https://addons.mozilla.org/firefox/downloads/file/4290466/ublock_origin-latest.xpi
           - id: keepassxc-browser@keepassxc.org
             url: https://addons.mozilla.org/firefox/downloads/file/4285762/keepassxc_browser-latest.xpi
+          - id: "{3e4d2037-d300-4e95-859d-3cba866f46d3}"
+            url: https://addons.mozilla.org/firefox/downloads/file/4073898/private_internet_access_ext-latest.xpi
       tags: [ firefox ]
       
     - role: whalej84.keepassxc
