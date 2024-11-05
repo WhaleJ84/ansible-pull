@@ -175,3 +175,11 @@
 
     - role: whalej84.signal
       tags: [ signal ]
+
+    - role: whalej84.bash
+      vars:
+        HISTSIZE: ""
+        HISTFILESIZE: ""
+        HISTFILE: "{{ ansible_user_dir }}/.local/state/bash/history"
+        inputrc: "{{ ansible_user_dir }}/.config/bash/inputrc"
+      tags: [ bash ]
