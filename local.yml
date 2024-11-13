@@ -184,5 +184,5 @@
         HISTFILE: "{{ ansible_user_dir }}/.local/state/bash/history"
         inputrc: "{{ ansible_user_dir }}/.config/bash/inputrc"
         PROMPT_COMMAND: |
-          'PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='\W(${PS1_CMD1})\$'
+          'PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='\[\033[38;5;66m\]\W\[\e[0m\]\[\033[38;5;124m\](${PS1_CMD1})\[\e[0m\]: '
       tags: [ bash ]
