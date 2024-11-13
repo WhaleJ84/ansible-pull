@@ -88,7 +88,7 @@
         cursor_shape: "ibeam"
         show_scrollbar: "never"
         theme_variant: "system"
-        custom_command: "tmux"
+        custom_command: "tmux new-session -A -s term"
       tags: [ gnome-terminal ]
 
     - name: whalej84.syncthing
