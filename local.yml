@@ -195,8 +195,8 @@
           CDDBLOCALDIR: "{{ ansible_user_dir }}/.local/share/cddb"
           KEEPWAVS: "n"
           CDROM: "/dev/sr0"
-          OUTPUTDIR: "{{ ansible_user_dir }}/Music/"
-          WAVOUTPUTDIR: "{{ ansible_user_dir }}/.cache/abcde/"
+          OUTPUTDIR: "{{ ansible_user_dir }}/Music"
+          WAVOUTPUTDIR: "{{ ansible_user_dir }}/.cache/abcde"
           OUTPUTTYPE: "m4a"
           OUTPUTFORMAT: "${ARTISTFILE}/${ALBUMFILE}/${TRACKNUM} ${TRACKFILE}"
           MUNGEFILENAME: |
