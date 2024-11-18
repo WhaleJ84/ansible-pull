@@ -44,6 +44,10 @@ roles:
     src: https://github.com/WhaleJ84/ansible-role-bash.git
     scm: git
 
+  - name: whalej84.abcde
+    src: https://github.com/WhaleJ84/ansible-role-abcde.git
+    scm: git
+
 collections:
   - community.general
 
