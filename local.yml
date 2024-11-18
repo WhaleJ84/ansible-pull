@@ -193,4 +193,5 @@
         abcde_config: "{{ ansible_user_dir }}/.config/abcde/config"
         abcde_vars:
           CDDBLOCALDIR: "{{ ansible_user_dir }}/.local/share/cddb"
+          KEEPWAVS: "n"
       tags: [ abcde ]
