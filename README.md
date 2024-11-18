@@ -23,6 +23,7 @@ Personal Ansible role repositories used within this project will be linked here:
 - [ansible-role-firefox](https://github.com/WhaleJ84/ansible-role-firefox)
 - [ansible-role-keepassxc](https://github.com/WhaleJ84/ansible-role-keepassxc)
 - [ansible-role-pyenv](https://github.com/WhaleJ84/ansible-role-pyenv)
+- [ansible-role-abcde](https://github.com/WhaleJ84/ansible-role-abcde)
 
 ## Development Notes
 
