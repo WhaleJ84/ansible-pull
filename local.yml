@@ -200,4 +200,5 @@
           OUTPUTFORMAT: "${ARTISTFILE}/${ALBUMFILE}/${TRACKNUM} ${TRACKFILE}"
           MUNGEFILENAME: |
             echo "$@" | sed -e 's/^\.*//' | tr -d ":><|*/\"'?[:cntrl:]"
+          EJECTCD: "y"
       tags: [ abcde ]
