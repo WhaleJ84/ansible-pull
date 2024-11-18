@@ -196,4 +196,5 @@
           KEEPWAVS: "n"
           CDROM: "/dev/sr0"
           OUTPUTDIR: "{{ ansible_user_dir }}/music"
+          OUTPUTTYPE: "m4a"
       tags: [ abcde ]
