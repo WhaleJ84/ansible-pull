@@ -32,12 +32,30 @@ Any development notes relevant to this repository or any related ansible role re
 
 ### Tags
 
+Tags are catorised into the following sections:
+
+- Shared
+- Role Specific
+
+#### Shared
+
 Shared tags used in playbooks should be documented here.
 Shared tags are used in all playbooks and should not be specific to a single role and therefore should be condisidered as reliable for filtering.
 The below shared tags can be used inconjuction with `--skip-tags` to fine-tune operation:
 
 - install
 - configure
+
+#### Role Specific
+
+Role specific tags are used to denote sections that are only applicable to their respective role.
+For example, `whalej84.example` should have a tag of `example` (omitting everything before the first full-stop).
+
+Used in conjunction with shared tags, operation can be specified for areas of interest.
+For example, if only the **whalej84.example** role needed to be configured but not installed, `--tags example --skip-tags install` would do just that.
+This would rely on only the *install* and *configure* shared tags existing.
+If more tags existed, you would need to ignore all irrelevant tags.
+It should follow a structure of `--tags $ROLE_SPECIFIC --skip-tags $SHARED`.
 
 ### Git Hooks
 
