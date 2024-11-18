@@ -2,6 +2,9 @@
 - hosts: localhost
   connection: local
   gather_facts: true
+  vars:
+    SHELL:
+      ALIAS_DIR: "{{ ansible_user_dir }}/.config/aliases.d"
 
   pre_tasks:
     - name: update apt repositories
