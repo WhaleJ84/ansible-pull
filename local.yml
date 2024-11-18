@@ -197,4 +197,7 @@
           CDROM: "/dev/sr0"
           OUTPUTDIR: "{{ ansible_user_dir }}/music"
           OUTPUTTYPE: "m4a"
+          OUTPUTFORMAT: "${ARTISTFILE}/${ALBUMFILE}/${TRACKNUM} ${TRACKFILE}"
+          MUNGEFILENAME: |
+            echo "$@" | sed -e 's/^\.*//' | tr -d ":><|*/\"'?[:cntrl:]"
       tags: [ abcde ]
