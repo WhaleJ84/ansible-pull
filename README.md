@@ -30,6 +30,15 @@ Personal Ansible role repositories used within this project will be linked here:
 
 Any development notes relevant to this repository or any related ansible role repository will be kept here.
 
+### Tags
+
+Shared tags used in playbooks should be documented here.
+Shared tags are used in all playbooks and should not be specific to a single role and therefore should be condisidered as reliable for filtering.
+The below shared tags can be used inconjuction with `--skip-tags` to fine-tune operation:
+
+- install
+- configure
+
 ### Git Hooks
 
 - pre-commit
