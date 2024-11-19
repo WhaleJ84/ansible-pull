@@ -18,13 +18,27 @@ For example, `--tags firefox --skip-tags install` will only configure Firefox (n
 
 ## Related Repositories
 
-Personal Ansible role repositories used within this project will be linked here:
+Personal Ansible role repositories related to this project will be linked here:
 
-- [ansible-role-firefox](https://github.com/WhaleJ84/ansible-role-firefox)
-- [ansible-role-keepassxc](https://github.com/WhaleJ84/ansible-role-keepassxc)
-- [ansible-role-pyenv](https://github.com/WhaleJ84/ansible-role-pyenv)
 - [ansible-role-abcde](https://github.com/WhaleJ84/ansible-role-abcde)
 - [ansible-role-apple-superdrive](https://github.com/WhaleJ84/ansible-role-apple-superdrive)
+- [ansible-role-bash](https://github.com/WhaleJ84/ansible-role-bash)
+- [ansible-role-firefox](https://github.com/WhaleJ84/ansible-role-firefox)
+- [ansible-role-git](https://github.com/WhaleJ84/ansible-role-git)
+- [ansible-role-gnome-settings](https://github.com/WhaleJ84/ansible-role-gnome-settings)
+- [ansible-role-gnome-terminal](https://github.com/WhaleJ84/ansible-role-gnome-terminal)
+- [ansible-role-gns3](https://github.com/WhaleJ84/ansible-role-gns3)
+- [ansible-role-keepassxc](https://github.com/WhaleJ84/ansible-role-keepassxc)
+- [ansible-role-lxml](https://github.com/WhaleJ84/ansible-role-lxml)
+- [ansible-role-nftables](https://github.com/WhaleJ84/ansible-role-nftables)
+- [ansible-role-pip](https://github.com/WhaleJ84/ansible-role-pip)
+- [ansible-role-psutil](https://github.com/WhaleJ84/ansible-role-psutil)
+- [ansible-role-pyenv](https://github.com/WhaleJ84/ansible-role-pyenv)
+- [ansible-role-signal](https://github.com/WhaleJ84/ansible-role-signal)
+- [ansible-role-syncthing](https://github.com/WhaleJ84/ansible-role-syncthing)
+- [ansible-role-timeshift](https://github.com/WhaleJ84/ansible-role-timeshift)
+- [ansible-role-timeshift-autosnap-apt](https://github.com/WhaleJ84/ansible-role-timeshift-autosnap-apt)
+- [ansible-role-tmux](https://github.com/WhaleJ84/ansible-role-tmux)
 
 ## Development Notes
 
