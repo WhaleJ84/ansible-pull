@@ -18,6 +18,55 @@
   roles:
     - role: whalej84.gnome-desktop
       vars:
+        background_picture: "file:///usr/share/backgrounds/Monument_valley_by_orbitelambda.jpg"
+        gtk_theme: "Yaru-sage-dark"
+        background:
+          picture_uri: "{{ background_picture }}"
+          picture_uri_dark: "{{ background_picture }}"
+          show_desktop_icons: "false"
+        calendar:
+          show_weekdate: "true"
+        datetime:
+          automatic_timezone: "false"
+        interface:
+          clock_format: "24h"
+          clock_show_weekday: "true"
+          color_scheme: "prefer-dark"
+          enable_hot_corners: "false"
+          gtk_theme: "{{ gtk_theme }}"
+          icon_theme: "{{ gtk_theme }}"
+          show_battery_percentage: "true"
+          text_scaling_factor: 1.25
+        notifications:
+          show_in_lock_screen: "false"
+        peripherals_keyboard:
+          numlock_state: "true"
+        peripherals_touchpad:
+          disable_while_typing: "true"
+          tap_to_click: "false"
+        privacy:
+          disable_camera: "true"
+          disable_microphone: "true"
+        remote_desktop_rdp:
+          enable: "false"
+        remote_desktop_vnc:
+          enable: "false"
+        _settings_daemon_plugins_color:
+          night_light_enabled: "true"
+        _settings_daemon_plugins_media_keys:
+          search: "['<Super>d']"
+        _system_location:
+          enabled: "false"
+        screensaver:
+          picture_uri: "{{ background_picture }}"
+        search_providers:
+          disable_external: "true"
+        wm_keybindings:
+          close: "['<Super><Shift>q']"
+          toggle_fullscreen: "['<Super>f']"
+        wm_preferences:
+          audible_bell: "false"
+          focus_mode: "'sloppy'"
         install_editor: True
       tags: [ gnome-desktop ]
 
