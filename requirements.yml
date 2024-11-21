@@ -20,6 +20,10 @@ roles:
     src: https://github.com/WhaleJ84/ansible-role-git.git
     scm: git
 
+  - name: whalej84.gnome-settings
+    src: https://github.com/WhaleJ84/ansible-role-gnome-settings.git
+    scm: git
+
   - name: whalej84.gnome-terminal
     src: https://github.com/WhaleJ84/ansible-role-gnome-terminal.git
     scm: git
