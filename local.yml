@@ -16,6 +16,9 @@
       changed_when: false
   
   roles:
+    - role: whalej84.gnome-settings
+      tags: [ gnome-settings ]
+
     - role: whalej84.firefox
       vars:
         prevent_default_download_pdf: "true"
