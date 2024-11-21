@@ -25,7 +25,7 @@ Personal Ansible role repositories related to this project will be linked here:
 - [ansible-role-bash](https://github.com/WhaleJ84/ansible-role-bash)
 - [ansible-role-firefox](https://github.com/WhaleJ84/ansible-role-firefox)
 - [ansible-role-git](https://github.com/WhaleJ84/ansible-role-git)
-- [ansible-role-gnome-settings](https://github.com/WhaleJ84/ansible-role-gnome-settings)
+- [ansible-role-gnome-desktop](https://github.com/WhaleJ84/ansible-role-gnome-desktop)
 - [ansible-role-gnome-terminal](https://github.com/WhaleJ84/ansible-role-gnome-terminal)
 - [ansible-role-gns3](https://github.com/WhaleJ84/ansible-role-gns3)
 - [ansible-role-keepassxc](https://github.com/WhaleJ84/ansible-role-keepassxc)
