@@ -18,8 +18,8 @@
   roles:
     - role: whalej84.gnome-desktop
       vars:
-        background_picture: "file:///usr/share/backgrounds/Monument_valley_by_orbitelambda.jpg"
-        gtk_theme: "Yaru-sage-dark"
+        background_picture: "'file:///usr/share/backgrounds/Monument_valley_by_orbitelambda.jpg'"
+        gtk_theme: "'Yaru-sage-dark'"
         background:
           picture_uri: "{{ background_picture }}"
           picture_uri_dark: "{{ background_picture }}"
