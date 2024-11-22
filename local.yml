@@ -3,6 +3,8 @@
   connection: local
   gather_facts: true
   vars:
+    _shell:
+      favorite_apps: "['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox_firefox.desktop', 'signal-desktop.desktop']"
     SHELL:
       ALIAS_DIR: "{{ ansible_user_dir }}/.config/aliases.d"
       RC: "{{ ansible_user_dir }}/.bashrc"
@@ -69,7 +71,7 @@
           focus_mode: "'sloppy'"
         install_editor: True
       tags: [ gnome-desktop ]
-
+disable_external
     - role: whalej84.firefox
       vars:
         prevent_default_download_pdf: "true"
