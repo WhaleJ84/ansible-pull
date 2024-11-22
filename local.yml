@@ -57,6 +57,7 @@
           night_light_enabled: "true"
         _settings_daemon_plugins_media_keys:
           search: "['<Super>d']"
+          terminal: "['<Super>Return']"
         _system_location:
           enabled: "false"
         screensaver:
