@@ -71,7 +71,7 @@
           focus_mode: "'sloppy'"
         install_editor: True
       tags: [ gnome-desktop ]
-disable_external
+
     - role: whalej84.firefox
       vars:
         prevent_default_download_pdf: "true"
