@@ -77,6 +77,56 @@
         install_editor: True
       tags: [ gnome-desktop ]
 
+    - role: whalej84.gnome-terminal
+      vars:
+        audible_bell: "false"
+        # Gruvbox colours
+        black: "'#FBFBF1F1C7C7'"
+        red: "'#CCCC24241D1D'"
+        green: "'#989897971A1A'"
+        yellow: "'#D7D799992121'"
+        blue: "'#454585858888'"
+        magenta: "'#B1B162628686'"
+        cyan: "'#68689D9D6A6A'"
+        white: "'#7C7C6F6F6464'"
+        bright_black: "'#929283837474'"
+        bright_red: "'#9D9D00000606'"
+        bright_green: "'#797974740E0E'"
+        bright_yellow: "'#B5B576761414'"
+        bright_blue: "'#070766667878'"
+        bright_magenta: "'#8F8F3F3F7171'"
+        bright_cyan: "'#42427B7B5858'"
+        bright_white: "'#3C3C38383636'"
+        #
+        background_color: "{{ black }}"
+        bold_color: "{{ bright_white }}"
+        cursor_background_color: "{{ bright_white }}"
+        cursor_foreground_color: "{{ black }}"
+        foreground_color: "{{ bright_white }}"
+        palette: "[{{ black }}, {{ red }}, {{ green }}, {{ yellow }}, {{ blue }}, {{ magenta }}, {{ cyan }}, {{ white }}, {{ bright_black }}, {{ bright_red }}, {{ bright_green }}, {{ bright_yellow }}, {{ bright_blue }}, {{ bright_magenta }}, {{ bright_cyan }}, {{ bright_white }}]"
+        use_theme_colors: "false"
+        cursor_shape: "ibeam"
+        show_scrollbar: "never"
+        theme_variant: "system"
+        custom_command: "tmux new-session -A -s term"
+      tags: [ gnome-terminal ]
+
+    - role: whalej84.tmux
+      vars:
+        tmux_config_dir: "{{ ansible_user_dir }}/.config/tmux"
+      tags: [ tmux ]
+
+    - role: whalej84.bash
+      vars:
+        HISTSIZE: ""
+        HISTFILESIZE: ""
+        HISTFILE: "{{ ansible_user_dir }}/.local/state/bash/history"
+        inputrc: "{{ ansible_user_dir }}/.config/bash/inputrc"
+        PROMPT_COMMAND: |
+          'PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='\[\033[38;5;66m\]\W\[\e[0m\]\[\033[38;5;124m\](${PS1_CMD1})\[\e[0m\]: \'
+        vi: True
+      tags: [ bash ]
+
     - role: whalej84.firefox
       vars:
         prevent_default_download_pdf: "true"
@@ -116,45 +166,6 @@
         enable_browser_integration: "true"
         enable_ssh_agent_integration: "true"
       tags: [ keepassxc ]
-
-    - role: whalej84.tmux
-      vars:
-        tmux_config_dir: "{{ ansible_user_dir }}/.config/tmux"
-      tags: [ tmux ]
-
-    - role: whalej84.gnome-terminal
-      vars:
-        audible_bell: "false"
-        # Gruvbox colours
-        black: "'#FBFBF1F1C7C7'"
-        red: "'#CCCC24241D1D'"
-        green: "'#989897971A1A'"
-        yellow: "'#D7D799992121'"
-        blue: "'#454585858888'"
-        magenta: "'#B1B162628686'"
-        cyan: "'#68689D9D6A6A'"
-        white: "'#7C7C6F6F6464'"
-        bright_black: "'#929283837474'"
-        bright_red: "'#9D9D00000606'"
-        bright_green: "'#797974740E0E'"
-        bright_yellow: "'#B5B576761414'"
-        bright_blue: "'#070766667878'"
-        bright_magenta: "'#8F8F3F3F7171'"
-        bright_cyan: "'#42427B7B5858'"
-        bright_white: "'#3C3C38383636'"
-        #
-        background_color: "{{ black }}"
-        bold_color: "{{ bright_white }}"
-        cursor_background_color: "{{ bright_white }}"
-        cursor_foreground_color: "{{ black }}"
-        foreground_color: "{{ bright_white }}"
-        palette: "[{{ black }}, {{ red }}, {{ green }}, {{ yellow }}, {{ blue }}, {{ magenta }}, {{ cyan }}, {{ white }}, {{ bright_black }}, {{ bright_red }}, {{ bright_green }}, {{ bright_yellow }}, {{ bright_blue }}, {{ bright_magenta }}, {{ bright_cyan }}, {{ bright_white }}]"
-        use_theme_colors: "false"
-        cursor_shape: "ibeam"
-        show_scrollbar: "never"
-        theme_variant: "system"
-        custom_command: "tmux new-session -A -s term"
-      tags: [ gnome-terminal ]
 
     - name: whalej84.syncthing
       vars:
@@ -241,17 +252,6 @@
 
     - role: whalej84.signal
       tags: [ signal ]
-
-    - role: whalej84.bash
-      vars:
-        HISTSIZE: ""
-        HISTFILESIZE: ""
-        HISTFILE: "{{ ansible_user_dir }}/.local/state/bash/history"
-        inputrc: "{{ ansible_user_dir }}/.config/bash/inputrc"
-        PROMPT_COMMAND: |
-          'PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='\[\033[38;5;66m\]\W\[\e[0m\]\[\033[38;5;124m\](${PS1_CMD1})\[\e[0m\]: \'
-        vi: True
-      tags: [ bash ]
 
     - role: whalej84.abcde
       vars:
