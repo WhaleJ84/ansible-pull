@@ -66,6 +66,8 @@
           disable_external: "true"
         wm_keybindings:
           close: "['<Super><Shift>q']"
+          switch_to_workspace_left: "['<Control>Left']"
+          switch_to_workspace_right: "['<Control>Right']"
           toggle_fullscreen: "['<Super>f']"
         wm_preferences:
           audible_bell: "false"
