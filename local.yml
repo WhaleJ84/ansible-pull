@@ -62,6 +62,8 @@
           enabled: "false"
         screensaver:
           picture_uri: "{{ background_picture }}"
+        shell_extensions_ding:
+          show_home: "false"
         search_providers:
           disable_external: "true"
         wm_keybindings:
