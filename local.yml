@@ -237,6 +237,8 @@
           untracked: "red"
         url_github_vars:
           insteadOf: "gh:"
+        ignore:
+          - "\\.*\\.swp"
       tags: [ git ]
 
     - role: whalej84.gns3
