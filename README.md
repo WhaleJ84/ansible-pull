@@ -39,6 +39,7 @@ Personal Ansible role repositories related to this project will be linked here:
 - [ansible-role-timeshift](https://github.com/WhaleJ84/ansible-role-timeshift)
 - [ansible-role-timeshift-autosnap-apt](https://github.com/WhaleJ84/ansible-role-timeshift-autosnap-apt)
 - [ansible-role-tmux](https://github.com/WhaleJ84/ansible-role-tmux)
+- [ansible-role-vim](https://github.com/WhaleJ84/ansible-role-vim)
 
 ## Development Notes
 

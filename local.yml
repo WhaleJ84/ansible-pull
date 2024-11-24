@@ -127,6 +127,9 @@
         vi: True
       tags: [ bash ]
 
+    - role: whalej84.vim
+      tags: [ vim ]
+
     - role: whalej84.firefox
       vars:
         prevent_default_download_pdf: "true"
