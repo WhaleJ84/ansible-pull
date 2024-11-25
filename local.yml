@@ -132,6 +132,8 @@
       tags: [ bash ]
 
     - role: whalej84.vim
+      vars:
+        MYVIMRC: "{{ XDG_CONFIG_HOME }}/vim/vimrc"
       tags: [ vim ]
 
     - role: whalej84.firefox
