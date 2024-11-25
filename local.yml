@@ -10,7 +10,7 @@
     _shell:
       favorite_apps: "['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox_firefox.desktop', 'signal-desktop.desktop']"
     SHELL:
-      ALIAS_DIR: "{{ ansible_user_dir }}/.config/aliases.d"
+      ALIAS_DIR: "{{ XDG_CONFIG_HOME }}/aliases.d"
       RC: "{{ ansible_user_dir }}/.bashrc"
 
   pre_tasks:
