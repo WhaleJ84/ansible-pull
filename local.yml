@@ -3,6 +3,10 @@
   connection: local
   gather_facts: true
   vars:
+    XDG_CACHE_HOME: "{{ ansible_user_dir }}/.cache"
+    XDG_CONFIG_HOME: "{{ ansible_user_dir}}/.config"
+    XDG_DATA_HOME: "{{ ansible_user_dir }}/.local/share"
+    XDG_STATE_HOME: "{{ ansible_user_dir }}/.local/state"
     _shell:
       favorite_apps: "['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox_firefox.desktop', 'signal-desktop.desktop']"
     SHELL:
