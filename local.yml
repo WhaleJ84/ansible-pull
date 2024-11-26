@@ -137,7 +137,7 @@
         APT_REQUIREMENTS:
           - nodejs
         VIM_PLUG_PLUGINS:
-          - neoclide/coc.nvim
+          - "Plug 'neoclide/coc.nvim', {'branch': 'release'}"
       tags: [ vim ]
 
     - role: whalej84.firefox
