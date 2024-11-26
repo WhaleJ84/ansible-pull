@@ -134,6 +134,10 @@
     - role: whalej84.vim
       vars:
         MYVIMRC: "{{ XDG_CONFIG_HOME }}/vim/vimrc"
+        APT_REQUIREMENTS:
+          - nodejs
+        VIM_PLUG_PLUGINS:
+          - neoclide/coc.nvim
       tags: [ vim ]
 
     - role: whalej84.firefox
