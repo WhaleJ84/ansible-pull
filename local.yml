@@ -21,8 +21,6 @@
       become: true
       changed_when: false
 
-- import_playbook: roles/vim.yml  
-
   roles:
     - role: whalej84.gnome-desktop
       vars:
@@ -282,3 +280,6 @@
 
     - role: whalej84.apple-superdrive
       tags: [ apple-superdrive ]
+
+- import_playbook: roles/vim.yml  
+
