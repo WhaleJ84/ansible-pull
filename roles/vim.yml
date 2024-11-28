@@ -8,9 +8,9 @@
           - nodejs
           - npm
         VIM_PLUG_PLUGINS:
-          - "Plug 'neoclide/coc.nvim', {'branch': 'release'}"
-          - "Plug 'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }"
-          - "Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}"
+          - "'neoclide/coc.nvim', {'branch': 'release'}"
+          - "'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }"
+          - "'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}"
         MODIFICATIONS:
           - LINE: 'inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"'
             COMMENT: "Use <enter> to select completion"
