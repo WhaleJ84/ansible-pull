@@ -1,0 +1,12 @@
+---
+- name: ROLE | Vim
+  hosts: localhost
+  roles:
+    - role: whalej84.vim
+      vars:
+        APT_REQUIREMENTS:
+          - nodejs
+        VIM_PLUG_PLUGINS:
+          - "Plug 'neoclide/coc.nvim', {'branch': 'release'}"
+      tags: [ vim ]
+
