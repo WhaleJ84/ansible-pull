@@ -6,6 +6,7 @@
       vars:
         APT_REQUIREMENTS:
           - nodejs
+          - npm
         VIM_PLUG_PLUGINS:
           - "Plug 'neoclide/coc.nvim', {'branch': 'release'}"
           - "Plug 'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }"
