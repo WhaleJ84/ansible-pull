@@ -8,11 +8,15 @@
           - nodejs
           - npm
         VIM_PLUG_PLUGINS:
-          - "'neoclide/coc.nvim', {'branch': 'release'}"
-          - "'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }"
-          - "'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}"
-        MODIFICATIONS:
-          - LINE: 'inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"'
-            COMMENT: "Use <enter> to select completion"
+          - PLUG: "'neoclide/coc.nvim', {'branch': 'release'}"
+            VARS:
+              - LINE: 'inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"'
+                COMMENT: "Use <enter> to select completion"
+              - LINE: |
+                  let g:coc_filetype_map = {
+                  }
+                COMMENT: "Map filetypes to coc plugins"
+          - PLUG: "'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }"
+          - PLUG: "'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}"
       tags: [ vim ]
 
