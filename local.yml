@@ -20,7 +20,9 @@
         cache_valid_time: 86400
       become: true
       changed_when: false
-  
+
+- import_playbook: roles/vim.yml  
+
   roles:
     - role: whalej84.gnome-desktop
       vars:
@@ -130,15 +132,6 @@
           'PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='\[\033[38;5;66m\]\W\[\e[0m\]\[\033[38;5;124m\](${PS1_CMD1})\[\e[0m\]: '
         vi: True
       tags: [ bash ]
-
-    - role: whalej84.vim
-      vars:
-        MYVIMRC: "{{ XDG_CONFIG_HOME }}/vim/vimrc"
-        APT_REQUIREMENTS:
-          - nodejs
-        VIM_PLUG_PLUGINS:
-          - "Plug 'neoclide/coc.nvim', {'branch': 'release'}"
-      tags: [ vim ]
 
     - role: whalej84.firefox
       vars:
