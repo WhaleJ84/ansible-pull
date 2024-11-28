@@ -8,5 +8,8 @@
           - nodejs
         VIM_PLUG_PLUGINS:
           - "Plug 'neoclide/coc.nvim', {'branch': 'release'}"
+        MODIFICATIONS:
+          - LINE: 'inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"'
+            COMMENT: "Use <enter> to select completion"
       tags: [ vim ]
 
