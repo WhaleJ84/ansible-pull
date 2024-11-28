@@ -8,6 +8,7 @@
           - nodejs
         VIM_PLUG_PLUGINS:
           - "Plug 'neoclide/coc.nvim', {'branch': 'release'}"
+          - "Plug 'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }"
         MODIFICATIONS:
           - LINE: 'inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"'
             COMMENT: "Use <enter> to select completion"
