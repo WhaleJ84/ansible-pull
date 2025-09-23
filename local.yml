@@ -134,6 +134,7 @@
     - role: whalej84.firefox
       vars:
         browser_aboutconfig_showwarning: "false"
+        browser_uicustomization_state: '{"placements":{"widget-overflow-fixed-list":[],"unified-extensions-area":[],"nav-bar":["sidebar-button","back-button","forward-button","stop-reload-button","vertical-spacer","customizableui-special-spring1","urlbar-container","customizableui-special-spring2","downloads-button","unified-extensions-button","ublock0_raymondhill_net-browser-action"],"toolbar-menubar":["menubar-items"],"TabsToolbar":[],"vertical-tabs":["tabbrowser-tabs"],"PersonalToolbar":["personal-bookmarks"]},"seen":[],"dirtyAreaCache":["nav-bar","PersonalToolbar","toolbar-menubar","TabsToolbar","unified-extensions-area","vertical-tabs"],"currentVersion":23,"newElementCount":3}'
         prevent_default_download_pdf: "true"
         remove_close_button_from_tabs: "true"
         toolbar_bookmark_visibility: "newtab"
