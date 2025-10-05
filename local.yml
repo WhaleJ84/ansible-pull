@@ -11,7 +11,8 @@
       favorite_apps: "['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox_firefox.desktop', 'signal-desktop.desktop']"
     SHELL:
       ALIAS_DIR: "{{ XDG_CONFIG_HOME }}/aliases.d"
-      RC: "{{ ansible_user_dir }}/.bashrc"
+    shell:
+      rc: "{{ ansible_user_dir }}/.bashrc"
 
   pre_tasks:
     - name: Update apt repositories
