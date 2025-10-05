@@ -7,8 +7,6 @@
     xdg_config_home: "{{ ansible_user_dir }}/.config"
     xdg_data_home: "{{ ansible_user_dir }}/.local/share"
     xdg_state_home: "{{ ansible_user_dir }}/.local/state"
-    _shell:
-      favorite_apps: "['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox_firefox.desktop', 'signal-desktop.desktop']"
     shell:
       alias_dir: "{{ xdg_config_home }}/aliases.d"
       rc: "{{ ansible_user_dir }}/.bashrc"
@@ -62,6 +60,8 @@
         _settings_daemon_plugins_media_keys:
           search: "['<Super>d']"
           terminal: "['<Super>Return']"
+        _shell:
+          favorite_apps: "['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox_firefox.desktop', 'signal-desktop.desktop']"
         _system_location:
           enabled: "false"
         screensaver:
