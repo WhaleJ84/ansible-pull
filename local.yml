@@ -162,7 +162,7 @@
             url: https://addons.mozilla.org/firefox/downloads/file/4073898/private_internet_access_ext-latest.xpi
       tags: [firefox]
 
-    - name: whalej84.git
+    - role: whalej84.git
       vars:
         config_location: "{{ xdg_config_home }}/git/config"
         user_vars:
@@ -249,7 +249,7 @@
         enable_ssh_agent_integration: "true"
       tags: [keepassxc]
 
-    - name: whalej84.syncthing
+    - role: whalej84.syncthing
       vars:
         devices:
           - "YRAHAWR-A3XFXZC-SCMZ5BB-K5RN2Y5-47OFKLK-XJ54HJ5-QSV6NP4-JP47MQR"
