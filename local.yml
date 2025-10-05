@@ -9,9 +9,8 @@
     XDG_STATE_HOME: "{{ ansible_user_dir }}/.local/state"
     _shell:
       favorite_apps: "['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox_firefox.desktop', 'signal-desktop.desktop']"
-    SHELL:
-      ALIAS_DIR: "{{ XDG_CONFIG_HOME }}/aliases.d"
     shell:
+      alias_dir: "{{ XDG_CONFIG_HOME }}/aliases.d"
       rc: "{{ ansible_user_dir }}/.bashrc"
 
   pre_tasks:
@@ -267,7 +266,7 @@
     - role: whalej84.abcde
       vars:
         abcde_config: "{{ ansible_user_dir }}/.config/abcde/config"
-        ABCDE_ALIASES: "{{ SHELL.ALIAS_DIR }}/50-abcde.conf"
+        ABCDE_ALIASES: "{{ shell.alias_dir }}/50-abcde.conf"
         abcde_vars:
           CDDBLOCALDIR: "{{ ansible_user_dir }}/.local/share/cddb"
           KEEPWAVS: "n"
