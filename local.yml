@@ -78,7 +78,7 @@
         wm_preferences:
           audible_bell: "false"
           focus_mode: "'sloppy'"
-        install_editor: True
+        install_editor: true
       tags: [gnome-desktop]
 
     - role: whalej84.gnome-terminal
@@ -251,7 +251,7 @@
 
     - role: whalej84.gns3
       vars:
-        iou_support: True
+        iou_support: true
         new_path: "{{ ansible_user_dir }}/.local/share/gns3"
         images_path: "{{ new_path }}/images"
         projects_path: "{{ new_path }}/projects"
