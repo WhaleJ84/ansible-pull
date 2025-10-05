@@ -14,7 +14,7 @@
       RC: "{{ ansible_user_dir }}/.bashrc"
 
   pre_tasks:
-    - name: update apt repositories
+    - name: Update apt repositories
       ansible.builtin.apt:
         update_cache: true
         cache_valid_time: 86400
