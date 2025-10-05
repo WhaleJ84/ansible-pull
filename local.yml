@@ -79,7 +79,7 @@
           audible_bell: "false"
           focus_mode: "'sloppy'"
         install_editor: True
-      tags: [ gnome-desktop ]
+      tags: [gnome-desktop]
 
     - role: whalej84.gnome-terminal
       vars:
@@ -113,12 +113,12 @@
         show_scrollbar: "never"
         theme_variant: "system"
         custom_command: "tmux new-session -A -s term"
-      tags: [ gnome-terminal ]
+      tags: [gnome-terminal]
 
     - role: whalej84.tmux
       vars:
         tmux_config_dir: "{{ ansible_user_dir }}/.config/tmux"
-      tags: [ tmux ]
+      tags: [tmux]
 
     - role: whalej84.bash
       vars:
@@ -129,7 +129,7 @@
         vi: true
         prompt_command: |
           'PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='\[\033[38;5;66m\]\W\[\e[0m\]\[\033[38;5;124m\](${PS1_CMD1})\[\e[0m\]: '
-      tags: [ bash ]
+      tags: [bash]
 
     - role: whalej84.firefox
       vars:
@@ -160,8 +160,8 @@
             url: https://addons.mozilla.org/firefox/downloads/file/4285762/keepassxc_browser-latest.xpi
           - id: "{3e4d2037-d300-4e95-859d-3cba866f46d3}"
             url: https://addons.mozilla.org/firefox/downloads/file/4073898/private_internet_access_ext-latest.xpi
-      tags: [ firefox ]
-      
+      tags: [firefox]
+
     - role: whalej84.keepassxc
       vars:
         theme: "auto"
@@ -173,7 +173,7 @@
         hide_window_to_system_tray_when_minimized: "true"
         enable_browser_integration: "true"
         enable_ssh_agent_integration: "true"
-      tags: [ keepassxc ]
+      tags: [keepassxc]
 
     - name: whalej84.syncthing
       vars:
@@ -191,7 +191,7 @@
           fsWatcherTimeoutS: "0"
           ignorePerms: "false"
           autoNormalize: "false"
-      tags: [ syncthing ]
+      tags: [syncthing]
 
     - name: whalej84.git
       vars:
@@ -247,7 +247,7 @@
           insteadOf: "gh:"
         ignore:
           - "\\.*\\.swp"
-      tags: [ git ]
+      tags: [git]
 
     - role: whalej84.gns3
       vars:
@@ -258,10 +258,10 @@
         appliances_path: "{{ new_path }}/appliances"
         symbols_path: "{{ new_path }}/symbols"
         configs_path: "{{ new_path }}/configs"
-      tags: [ gns3 ]
+      tags: [gns3]
 
     - role: whalej84.signal
-      tags: [ signal ]
+      tags: [signal]
 
     - role: whalej84.abcde
       vars:
@@ -280,10 +280,9 @@
           EJECTCD: "y"
           aliases:
             abcde: "abcde -c {{ ansible_user_dir }}/.config/abcde/config"
-      tags: [ abcde ]
+      tags: [abcde]
 
     - role: whalej84.apple-superdrive
-      tags: [ apple-superdrive ]
+      tags: [apple-superdrive]
 
-- import_playbook: roles/vim.yml  
-
+- import_playbook: roles/vim.yml
