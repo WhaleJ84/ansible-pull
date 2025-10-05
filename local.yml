@@ -297,7 +297,7 @@
             echo "$@" | sed -e 's/^\.*//' | tr -d ":><|*/\"'?[:cntrl:]";
           EJECTCD: "y"
           aliases:
-            abcde: "abcde -c {{ XDG_CONFIG_HOME }}/abcde/config"
+            abcde: "abcde -c {{ abcde_config }}"
       tags: [abcde]
 
     - role: whalej84.apple-superdrive
