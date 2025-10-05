@@ -117,7 +117,7 @@
 
     - role: whalej84.tmux
       vars:
-        tmux_config_dir: "{{ ansible_user_dir }}/.config/tmux"
+        tmux_config_dir: "{{ XDG_CONFIG_HOME }}/tmux"
       tags: [tmux]
 
     - role: whalej84.bash
@@ -164,17 +164,17 @@
 
     - name: whalej84.git
       vars:
-        config_location: "{{ ansible_user_dir }}/.config/git/config"
+        config_location: "{{ XDG_CONFIG_HOME }}/git/config"
         user_vars:
           email: "james@james-whale.com"
           name: "James Whale"
           signingkey: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOBpPvI5ze4AbkQtGG6r/9X5/imK2e27SjQF86PzQc3j james@james-whale.com"
         init_vars:
           defaultBranch: "main"
-          templateDir: "{{ ansible_user_dir }}/.local/share/git/templates/default"
+          templateDir: "{{ XDG_DATA_HOME }}/git/templates/default"
         core_vars:
           editor: "vim"
-          hooksPath: "{{ ansible_user_dir }}/.local/share/git/hooks"
+          hooksPath: "{{ XDG_DATA_HOME }}/git/hooks"
         gpg_vars:
           format: "ssh"
         gpg_ssh_vars:
@@ -257,7 +257,7 @@
         keepassxc:
           id: "gscwy-nuhan"
           label: "KeepassXC"
-          path: "{{ ansible_user_dir }}/.local/share/keepassxc"
+          path: "{{ XDG_DATA_HOME }}/keepassxc"
           type: "sendreceive"
           rescanIntervalS: "0"
           fsWatcherEnabled: "false"
@@ -270,7 +270,7 @@
     - role: whalej84.gns3
       vars:
         iou_support: true
-        new_path: "{{ ansible_user_dir }}/.local/share/gns3"
+        new_path: "{{ XDG_DATA_HOME }}/gns3"
         images_path: "{{ new_path }}/images"
         projects_path: "{{ new_path }}/projects"
         appliances_path: "{{ new_path }}/appliances"
@@ -283,21 +283,21 @@
 
     - role: whalej84.abcde
       vars:
-        abcde_config: "{{ ansible_user_dir }}/.config/abcde/config"
+        abcde_config: "{{ XDG_CONFIG_HOME }}/abcde/config"
         ABCDE_ALIASES: "{{ shell.alias_dir }}/50-abcde.conf"
         abcde_vars:
-          CDDBLOCALDIR: "{{ ansible_user_dir }}/.local/share/cddb"
+          CDDBLOCALDIR: "{{ XDG_DATA_HOME }}/cddb"
           KEEPWAVS: "n"
           CDROM: "/dev/sr0"
           OUTPUTDIR: "{{ ansible_user_dir }}/Music"
-          WAVOUTPUTDIR: "{{ ansible_user_dir }}/.cache/abcde"
+          WAVOUTPUTDIR: "{{ XDG_CACHE_HOME }}/abcde"
           OUTPUTTYPE: "m4a"
           OUTPUTFORMAT: "${ARTISTFILE}/${ALBUMFILE}/${TRACKNUM} ${TRACKFILE}"
           MUNGEFILENAME: |
             echo "$@" | sed -e 's/^\.*//' | tr -d ":><|*/\"'?[:cntrl:]";
           EJECTCD: "y"
           aliases:
-            abcde: "abcde -c {{ ansible_user_dir }}/.config/abcde/config"
+            abcde: "abcde -c {{ XDG_CONFIG_HOME }}/abcde/config"
       tags: [abcde]
 
     - role: whalej84.apple-superdrive
