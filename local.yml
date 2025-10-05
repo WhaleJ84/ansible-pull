@@ -162,37 +162,6 @@
             url: https://addons.mozilla.org/firefox/downloads/file/4073898/private_internet_access_ext-latest.xpi
       tags: [firefox]
 
-    - role: whalej84.keepassxc
-      vars:
-        theme: "auto"
-        compact_mode: "true"
-        automatically_launch_keepassxc_at_system_startup: "true"
-        minimize_instead_of_app_exit: "true"
-        show_a_system_tray_icon: "true"
-        tray_icon_type: "colorful"
-        hide_window_to_system_tray_when_minimized: "true"
-        enable_browser_integration: "true"
-        enable_ssh_agent_integration: "true"
-      tags: [keepassxc]
-
-    - name: whalej84.syncthing
-      vars:
-        devices:
-          - "YRAHAWR-A3XFXZC-SCMZ5BB-K5RN2Y5-47OFKLK-XJ54HJ5-QSV6NP4-JP47MQR"
-          - "FBYQERZ-M45W5HZ-R7OGQ6V-5M7MX4X-GHIQ2EM-IWITNLH-O3N4HSH-4YK55AF"
-        keepassxc:
-          id: "gscwy-nuhan"
-          label: "KeepassXC"
-          path: "{{ ansible_user_dir }}/.local/share/keepassxc"
-          type: "sendreceive"
-          rescanIntervalS: "0"
-          fsWatcherEnabled: "false"
-          fsWatcherDelayS: "10"
-          fsWatcherTimeoutS: "0"
-          ignorePerms: "false"
-          autoNormalize: "false"
-      tags: [syncthing]
-
     - name: whalej84.git
       vars:
         config_location: "{{ ansible_user_dir }}/.config/git/config"
@@ -249,6 +218,55 @@
           - "\\.*\\.swp"
       tags: [git]
 
+    - role: whalej84.vim
+      vars:
+        APT_REQUIREMENTS:
+          - nodejs
+          - npm
+        VIM_PLUG_PLUGINS:
+          - PLUG: "'neoclide/coc.nvim', {'branch': 'release'}"
+            VARS:
+              - LINE: 'inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"'
+                COMMENT: "Use <enter> to select completion"
+              - LINE: |
+                  let g:coc_filetype_map = {
+                  }
+                COMMENT: "Map filetypes to coc plugins"
+          - PLUG: "'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }"
+          - PLUG: "'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}"
+      tags: [vim]
+
+    - role: whalej84.keepassxc
+      vars:
+        theme: "auto"
+        compact_mode: "true"
+        automatically_launch_keepassxc_at_system_startup: "true"
+        minimize_instead_of_app_exit: "true"
+        show_a_system_tray_icon: "true"
+        tray_icon_type: "colorful"
+        hide_window_to_system_tray_when_minimized: "true"
+        enable_browser_integration: "true"
+        enable_ssh_agent_integration: "true"
+      tags: [keepassxc]
+
+    - name: whalej84.syncthing
+      vars:
+        devices:
+          - "YRAHAWR-A3XFXZC-SCMZ5BB-K5RN2Y5-47OFKLK-XJ54HJ5-QSV6NP4-JP47MQR"
+          - "FBYQERZ-M45W5HZ-R7OGQ6V-5M7MX4X-GHIQ2EM-IWITNLH-O3N4HSH-4YK55AF"
+        keepassxc:
+          id: "gscwy-nuhan"
+          label: "KeepassXC"
+          path: "{{ ansible_user_dir }}/.local/share/keepassxc"
+          type: "sendreceive"
+          rescanIntervalS: "0"
+          fsWatcherEnabled: "false"
+          fsWatcherDelayS: "10"
+          fsWatcherTimeoutS: "0"
+          ignorePerms: "false"
+          autoNormalize: "false"
+      tags: [syncthing]
+
     - role: whalej84.gns3
       vars:
         iou_support: true
@@ -284,21 +302,3 @@
 
     - role: whalej84.apple-superdrive
       tags: [apple-superdrive]
-
-    - role: whalej84.vim
-      vars:
-        APT_REQUIREMENTS:
-          - nodejs
-          - npm
-        VIM_PLUG_PLUGINS:
-          - PLUG: "'neoclide/coc.nvim', {'branch': 'release'}"
-            VARS:
-              - LINE: 'inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"'
-                COMMENT: "Use <enter> to select completion"
-              - LINE: |
-                  let g:coc_filetype_map = {
-                  }
-                COMMENT: "Map filetypes to coc plugins"
-          - PLUG: "'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }"
-          - PLUG: "'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}"
-      tags: [vim]
