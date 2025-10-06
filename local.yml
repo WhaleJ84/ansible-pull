@@ -301,3 +301,6 @@
 
     - role: whalej84.apple-superdrive
       tags: [apple-superdrive]
+
+    - role: whalej84.pycharm
+      tags: [pycharm]
