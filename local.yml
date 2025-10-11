@@ -160,6 +160,8 @@
             url: https://addons.mozilla.org/firefox/downloads/file/4285762/keepassxc_browser-latest.xpi
           - id: "{3e4d2037-d300-4e95-859d-3cba866f46d3}"
             url: https://addons.mozilla.org/firefox/downloads/file/4073898/private_internet_access_ext-latest.xpi
+          - id: "{d634138d-c276-4fc8-924b-40a0ea21d284}"
+            url: https://addons.mozilla.org/firefox/downloads/file/4588819/1password_x_password_manager-latest.xpi
       tags: [firefox]
 
     - role: whalej84.git
