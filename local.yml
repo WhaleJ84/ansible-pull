@@ -275,6 +275,9 @@
           autoNormalize: "false"
       tags: [syncthing]
 
+    - role: whalej84.docker
+      tags: [docker]
+
     - role: whalej84.gns3
       vars:
         iou_support: true

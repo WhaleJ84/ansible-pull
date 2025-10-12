@@ -12,6 +12,10 @@ roles:
     src: https://github.com/WhaleJ84/ansible-role-bash.git
     scm: git
 
+  - name: whalej84.docker
+    src: https://github.com/whalej84/ansible-role-docker.git
+    scm: git
+
   - name: whalej84.firefox
     src: https://github.com/WhaleJ84/ansible-role-firefox.git
     scm: git
