@@ -68,6 +68,10 @@ roles:
     src: https://github.com/WhaleJ84/ansible-role-vim.git
     scm: git
 
+  - name: whalej84.wireshark
+    src: https://github.com/whalej84/ansible-role-wireshark.git
+    scm: git
+
 collections:
   - community.general
 
