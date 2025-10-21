@@ -1,15 +1,15 @@
 ---
 roles:
   - name: whalej84.abcde
-    src: https://github.com/WhaleJ84/ansible-role-abcde.git
+    src: https://github.com/whalej84/ansible-role-abcde.git
     scm: git
 
   - name: whalej84.apple-superdrive
-    src: https://github.com/WhaleJ84/ansible-role-apple-superdrive.git
+    src: https://github.com/whalej84/ansible-role-apple-superdrive.git
     scm: git
 
   - name: whalej84.bash
-    src: https://github.com/WhaleJ84/ansible-role-bash.git
+    src: https://github.com/whalej84/ansible-role-bash.git
     scm: git
 
   - name: whalej84.docker
@@ -17,59 +17,59 @@ roles:
     scm: git
 
   - name: whalej84.firefox
-    src: https://github.com/WhaleJ84/ansible-role-firefox.git
+    src: https://github.com/whalej84/ansible-role-firefox.git
     scm: git
 
   - name: whalej84.git
-    src: https://github.com/WhaleJ84/ansible-role-git.git
+    src: https://github.com/whalej84/ansible-role-git.git
     scm: git
 
   - name: whalej84.gnome-desktop
-    src: https://github.com/WhaleJ84/ansible-role-gnome-desktop.git
+    src: https://github.com/whalej84/ansible-role-gnome-desktop.git
     scm: git
 
   - name: whalej84.gnome-terminal
-    src: https://github.com/WhaleJ84/ansible-role-gnome-terminal.git
+    src: https://github.com/whalej84/ansible-role-gnome-terminal.git
     scm: git
 
   - name: whalej84.gns3
-    src: https://github.com/WhaleJ84/ansible-role-gns3.git
+    src: https://github.com/whalej84/ansible-role-gns3.git
     scm: git
 
   - name: whalej84.keepassxc
-    src: https://github.com/WhaleJ84/ansible-role-keepassxc.git
+    src: https://github.com/whalej84/ansible-role-keepassxc.git
     scm: git
 
   - name: whalej84.lxml
-    src: https://github.com/WhaleJ84/ansible-role-lxml.git
+    src: https://github.com/whalej84/ansible-role-lxml.git
     scm: git
 
   - name: whalej84.psutil
-    src: https://github.com/WhaleJ84/ansible-role-psutil.git
+    src: https://github.com/whalej84/ansible-role-psutil.git
     scm: git
 
   - name: whalej84.pycharm
-    src: https://github.com/WhaleJ84/ansible-role-pycharm.git
+    src: https://github.com/whalej84/ansible-role-pycharm.git
     scm: git
 
   - name: whalej84.signal
-    src: https://github.com/WhaleJ84/ansible-role-signal.git
+    src: https://github.com/whalej84/ansible-role-signal.git
     scm: git
 
   - name: whalej84.syncthing
-    src: https://github.com/WhaleJ84/ansible-role-syncthing.git
+    src: https://github.com/whalej84/ansible-role-syncthing.git
     scm: git
 
   - name: whalej84.tmux
-    src: https://github.com/WhaleJ84/ansible-role-tmux.git
+    src: https://github.com/whalej84/ansible-role-tmux.git
     scm: git
 
   - name: whalej84.uv
-    src: https://github.com/WhaleJ84/ansible-role-uv.git
+    src: https://github.com/whalej84/ansible-role-uv.git
     scm: git
 
   - name: whalej84.vim
-    src: https://github.com/WhaleJ84/ansible-role-vim.git
+    src: https://github.com/whalej84/ansible-role-vim.git
     scm: git
 
   - name: whalej84.wireshark
@@ -78,4 +78,3 @@ roles:
 
 collections:
   - community.general
-
