@@ -319,3 +319,6 @@
 
     - role: whalej84.pycharm
       tags: [pycharm]
+
+    - role: whalej84.uv
+      tags: [pycharm]

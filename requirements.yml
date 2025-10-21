@@ -64,6 +64,10 @@ roles:
     src: https://github.com/WhaleJ84/ansible-role-tmux.git
     scm: git
 
+  - name: whalej84.uv
+    src: https://github.com/WhaleJ84/ansible-role-uv.git
+    scm: git
+
   - name: whalej84.vim
     src: https://github.com/WhaleJ84/ansible-role-vim.git
     scm: git
