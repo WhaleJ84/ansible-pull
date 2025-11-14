@@ -77,6 +77,7 @@
           toggle_fullscreen: "['<Super>f']"
         wm_preferences:
           audible_bell: "false"
+          button_layout: ":minimize,maximize,close"
           focus_mode: "'sloppy'"
         install_editor: true
       tags: [gnome-desktop]
