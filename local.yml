@@ -233,6 +233,7 @@
         APT_REQUIREMENTS:
           - nodejs
           - npm
+          - python3-venv
         NPM_PACKAGES:
           - yarn
         VIM_PLUG_PLUGINS:
