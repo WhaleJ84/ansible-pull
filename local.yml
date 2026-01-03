@@ -233,6 +233,8 @@
         APT_REQUIREMENTS:
           - nodejs
           - npm
+        NPM_PACKAGES:
+          - yarn
         VIM_PLUG_PLUGINS:
           - PLUG: "'neoclide/coc.nvim', {'branch': 'release'}"
             VARS:
