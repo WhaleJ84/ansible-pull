@@ -240,11 +240,10 @@
             VARS:
               - LINE: 'inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"'
                 COMMENT: "Use <enter> to select completion"
-              - LINE: |
-                  let g:coc_filetype_map = {}
-                COMMENT: "Map filetypes to coc plugins"
           - PLUG: "'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }"
           - PLUG: "'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}"
+        COC_FILETYPE_MAP:
+          yaml.ansible: ansible
       tags: [vim]
 
     - role: whalej84.keepassxc
