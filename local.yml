@@ -1,4 +1,5 @@
 ---
+# vim:ft=yaml.ansible
 - hosts: localhost
   connection: local
   gather_facts: true
