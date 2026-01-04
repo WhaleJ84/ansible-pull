@@ -244,6 +244,11 @@
                 COMMENT: "Use <enter> to select completion"
           - PLUG: "'sheerun/vim-polyglot'"
           - PLUG: "'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}"
+        VIM_SET_OPTIONS:
+          - LINE: nocompatible
+            COMMENT: "Required for custom filetype detection (e.g. yaml.ansible)"
+          - LINE: "number relativenumber"
+            COMMENT: "Show line number relative to cursor position"
         COC_FILETYPE_MAP:
           yaml.ansible: ansible
         COC_SETTINGS:
