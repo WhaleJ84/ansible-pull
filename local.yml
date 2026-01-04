@@ -242,7 +242,7 @@
             VARS:
               - LINE: 'inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"'
                 COMMENT: "Use <enter> to select completion"
-          - PLUG: "'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }"
+          - PLUG: "'sheerun/vim-polyglot'"
           - PLUG: "'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}"
         COC_FILETYPE_MAP:
           yaml.ansible: ansible
