@@ -179,7 +179,7 @@
         user_vars:
           email: "james@james-whale.com"
           name: "James Whale"
-          signingkey: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOBpPvI5ze4AbkQtGG6r/9X5/imK2e27SjQF86PzQc3j james@james-whale.com"
+          signingkey: "james@james-whale.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOBpPvI5ze4AbkQtGG6r/9X5/imK2e27SjQF86PzQc3j"
         init_vars:
           defaultBranch: "main"
           templateDir: "{{ xdg_data_home }}/git/templates/default"
