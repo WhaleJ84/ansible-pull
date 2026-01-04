@@ -208,6 +208,7 @@
           squash: "merge --squash"
           rw: "reset --hard"
           prune: "remote prune origin"
+          pus: "!git remote | xargs -L1 git push --all"
         color_vars:
           ui: "true"
         color_branch_vars:
