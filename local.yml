@@ -245,6 +245,8 @@
           - PLUG: "'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}"
         COC_FILETYPE_MAP:
           yaml.ansible: ansible
+        COC_SETTINGS:
+          ansible.builtin.isWithYamllint: true
       tags: [vim]
 
     - role: whalej84.keepassxc
